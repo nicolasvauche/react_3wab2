@@ -1,38 +1,24 @@
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "/vite.svg";
-import Header from "../../layout/Header";
-import Main from "../../layout/Main";
-import Footer from "../../layout/Footer";
-import IconLink from "../../components/IconLink";
+import Header from "../../templates/Header";
+import Footer from "../../templates/Footer";
+import ContactForm from "../../organism/Form";
+import FormGroup from "../../molecule/FormGroup";
+import FormLabel from "../../atom/FormLabel";
+import FormInputText from "../../atom/FormInputText";
 
 const Homepage = () => {
-  const studentsData = [
-    { notes: [12, 11, 10], name: "Alan" },
-    { notes: [18, 10], name: "Alice" },
-    { notes: [10, 9, 11], name: "Bernard" },
-    { notes: [11, 17, 19], name: "Sophie" },
-  ];
-
   return (
     <>
-      <div className="app-top">
-        <IconLink
-          linkUrl="https://vite.dev"
-          iconSrc={viteLogo}
-          iconClass="logo"
-          iconAlt="Vite logo"
-        />
-
-        <IconLink
-          linkUrl="https://react.dev"
-          iconSrc={reactLogo}
-          iconClass="logo react"
-          iconAlt="React logo"
-        />
-      </div>
-
       <Header />
-      <Main students={studentsData} />
+
+      <main className="app-main">
+        <ContactForm>
+          <FormGroup>
+            <FormLabel content="Votre nom" inputId="name" />
+            <FormInputText inputName="name" inputId="name" />
+          </FormGroup>
+        </ContactForm>
+      </main>
+
       <Footer />
     </>
   );

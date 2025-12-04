@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Un formulaire en React qui illustre atomic design + events + handler
       </p>
     </footer>
   );
