@@ -1,9 +1,5 @@
-import { useState } from "react";
-
-const Count = () => {
-  const [count, setCount] = useState(0);
-
-  return <p>Le compteur est égal à {count}</p>;
+const Count = ({ count }) => {
+  return <h3>Le compteur est égal à {count}</h3>;
 };
 
 export default Count;

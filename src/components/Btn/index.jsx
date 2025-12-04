@@ -1,8 +1,6 @@
-const Btn = ({handleBtnClick}) => {
+const Btn = ({ handleBtnClick }) => {
   return (
-    <button onClick={() => handleBtnClick()}>
-      Increase counter
-    </button>
+    <button onClick={() => handleBtnClick()}>Incrémenter le compteur</button>
   );
 };
 
