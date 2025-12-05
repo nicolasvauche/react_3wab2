@@ -1,4 +1,5 @@
 import FormSubmit from "../../atom/FormSubmit";
+import "./index.css";
 
 const ContactForm = ({ children }) => {
   return (
