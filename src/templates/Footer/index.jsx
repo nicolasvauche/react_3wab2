@@ -1,9 +1,7 @@
-const Footer = () => {
+const Footer = ({ content }) => {
   return (
     <footer className="app-footer">
-      <p className="read-the-docs">
-        Un formulaire en React qui illustre atomic design + events + handler
-      </p>
+      <p className="read-the-docs">{content}</p>
     </footer>
   );
 };

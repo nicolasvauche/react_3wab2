@@ -10,7 +10,7 @@ import FormTextarea from "../../atom/FormTextarea";
 const Contactpage = () => {
   return (
     <>
-      <Header />
+      <Header pageTitle="Contactez-nous" />
 
       <main className="app-main">
         <Form>
@@ -36,7 +36,7 @@ const Contactpage = () => {
         </Form>
       </main>
 
-      <Footer />
+      <Footer content="Un formulaire en React qui illustre atomic design + events + handler" />
     </>
   );
 };

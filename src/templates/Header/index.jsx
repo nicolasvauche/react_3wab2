@@ -1,7 +1,7 @@
-const Header = () => {
+const Header = ({ pageTitle }) => {
   return (
     <header className="app-header">
-      <h1>Contactez-nous</h1>
+      <h1>{pageTitle}</h1>
     </header>
   );
 };
