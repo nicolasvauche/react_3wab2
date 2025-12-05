@@ -1,6 +1,11 @@
-const FormInputEmail = () => {
+const FormInputEmail = ({ inputName, inputId }) => {
   return (
-    <input type="email" name="email" id="email" className="form-control" />
+    <input
+      type="email"
+      name={inputName}
+      id={inputId}
+      className="form-control"
+    />
   );
 };
 

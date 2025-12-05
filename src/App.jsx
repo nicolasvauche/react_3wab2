@@ -1,9 +1,9 @@
-import Homepage from "./pages/Homepage";
+import Contactpage from "./pages/Contactpage";
 import "./App.css";
 
 function App() {
   return (
-    <Homepage />
+    <Contactpage />
   );
 }
 
