@@ -1,9 +1,9 @@
 import FormSubmit from "../../atom/FormSubmit";
 import "./index.css";
 
-const ContactForm = ({ children }) => {
+const ContactForm = ({ handleSubmit, children }) => {
   return (
-    <form className="app-form">
+    <form className="app-form" onSubmit={handleSubmit}>
       {children}
 
       <FormSubmit content="Envoyer" />

@@ -1,6 +1,12 @@
-const FormInputText = ({ inputName, inputId }) => {
+const FormInputText = ({ inputName, inputId, handleNameChange }) => {
   return (
-    <input type="text" name={inputName} id={inputId} className="form-control" />
+    <input
+      type="text"
+      name={inputName}
+      id={inputId}
+      className="form-control"
+      onInput={handleNameChange}
+    />
   );
 };
 

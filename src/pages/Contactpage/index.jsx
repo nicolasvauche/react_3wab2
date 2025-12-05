@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "../../templates/Header";
 import Footer from "../../templates/Footer";
 import Form from "../../organism/Form";
@@ -8,15 +9,30 @@ import FormInputEmail from "../../atom/FormInputEmail";
 import FormTextarea from "../../atom/FormTextarea";
 
 const Contactpage = () => {
+  const [name, setName] = useState(null);
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Coucou ${name}`);
+  };
+
   return (
     <>
       <Header pageTitle="Contactez-nous" />
 
       <main className="app-main">
-        <Form>
+        <Form handleSubmit={handleSubmit}>
           <FormGroup>
             <FormLabel content="Votre nom" inputId="name" />
-            <FormInputText inputName="name" inputId="name" />
+            <FormInputText
+              inputName="name"
+              inputId="name"
+              handleNameChange={handleNameChange}
+            />
           </FormGroup>
 
           <FormGroup>
