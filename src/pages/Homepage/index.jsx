@@ -4,15 +4,11 @@ import Header from "../../layout/Header";
 import Main from "../../layout/Main";
 import Footer from "../../layout/Footer";
 import IconLink from "../../components/IconLink";
+import Students from "../../components/Students";
+import Clock from "../../components/Clock";
+import studentsData from "../../data/students.json";
 
 const Homepage = () => {
-  const studentsData = [
-    { notes: [12, 11, 10], name: "Alan" },
-    { notes: [18, 10], name: "Alice" },
-    { notes: [10, 9, 11], name: "Bernard" },
-    { notes: [11, 17, 19], name: "Sophie" },
-  ];
-
   return (
     <>
       <div className="app-top">
@@ -32,7 +28,10 @@ const Homepage = () => {
       </div>
 
       <Header />
-      <Main students={studentsData} />
+      <Main>
+        <Clock />
+        <Students students={studentsData} />
+      </Main>
       <Footer />
     </>
   );

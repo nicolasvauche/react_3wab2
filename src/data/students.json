@@ -1,0 +1,6 @@
+[
+  { "name": "Alan", "notes": [12, 11, 10] },
+  { "name": "Alice", "notes": [18, 10] },
+  { "name": "Bernard", "notes": [10, 9, 11] },
+  { "name": "Sophie", "notes": [11, 17, 19] }
+]
