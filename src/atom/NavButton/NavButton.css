@@ -3,10 +3,12 @@
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
+  color: #cfcfcf;
   background-color: #333333;
   border-radius: 0.25rem;
 }
 
 .navlink.active {
+  color: #333333;
   background-color: #cfcfcf;
 }

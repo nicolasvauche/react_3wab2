@@ -1,8 +1,10 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import Header from "../../layout/Header";
 import "./NotFoundpage.css";
 
 const NotFoundpage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Header />
@@ -22,10 +24,18 @@ const NotFoundpage = () => {
 
       <p>
         Peut-être voudriez-vous{" "}
-        <Link to="/personnages">aller voir les personnages</Link> ?
-        <br />
+        <button onClick={() => navigate("/personnages")}>
+          aller voir les personnages
+        </button>{" "}
+        ?
+      </p>
+      <p>
         Ou bien{" "}
-        <Link to="/">revenir à l'accueil</Link> ?
+        <button onClick={() => navigate("/")}>retourner à l'accueil</button> ?
+      </p>
+      <p>
+        Ou encore{" "}
+        <button onClick={() => navigate(-1)}>revenir en arrière</button> ?
       </p>
     </>
   );
