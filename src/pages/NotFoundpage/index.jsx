@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import Header from "../../layout/Header";
 import "./NotFoundpage.css";
 
