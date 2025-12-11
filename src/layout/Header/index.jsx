@@ -1,7 +1,9 @@
+import Navigation from "../../organism/Navigation";
+
 const Header = () => {
   return (
     <header className="app-header">
-      <h1>Vite + React</h1>
+      <Navigation />
     </header>
   );
 };

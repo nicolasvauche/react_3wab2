@@ -1,0 +1,12 @@
+.navlink {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #333333;
+  border-radius: 0.25rem;
+}
+
+.navlink.active {
+  background-color: #cfcfcf;
+}

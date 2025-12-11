@@ -1,10 +1,8 @@
-import Homepage from "./pages/Homepage";
 import "./App.css";
+import AppRouter from "./AppRouter";
 
 function App() {
-  return (
-    <Homepage />
-  );
+  return <AppRouter />;
 }
 
 export default App;
