@@ -1,3 +1,19 @@
-.icon {
-    font-size: 2rem;
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.character-card {
+  padding: 1rem;
+  background-color: #333333;
+  border-radius: 0.5rem;
+}
+
+.character-media img {
+  height: 30dvh;
+}
+
+ul {
+  list-style: none;
 }
