@@ -1,9 +1,13 @@
-import Homepage from "./pages/Homepage";
 import "./App.css";
+import Calculator from "./Calculator";
 
 function App() {
   return (
-    <Homepage />
+    <>
+      <h1>Calculatrice avec useReducer</h1>
+
+      <Calculator />
+    </>
   );
 }
 
